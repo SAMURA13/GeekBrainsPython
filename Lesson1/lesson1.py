@@ -7,11 +7,11 @@
 # 2
 import math
 try:
-    vvod_n = int(input(Введите сколько за день машина проезжает n километров ))
-    vvod_m = int(input(Введите сколько за день машина проезжает m километров ))
-    print(math.ceil(vvod_mvvod_n))
-except
-    print(Вы ввели не коректные данные)
+    vvod_n = int(input("Введите сколько за день машина проезжает n километров" ))
+    vvod_m = int(input("Введите сколько за день машина проезжает m километров" ))
+    print(math.ceil(vvod_m-vvod_n))
+except:
+    print("Вы ввели не коректные данные")
 
 exit()
 
