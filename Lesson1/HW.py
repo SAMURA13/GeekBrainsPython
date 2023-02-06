@@ -52,29 +52,29 @@
 
 # Задача 2: - HARD необязательная, идет за 3 обязательных Найдите сумму цифр любого вещественного или целого числа.
 # Можно использовать decimal. Через строку решать нельзя.
-# try:
-#     input_number = float(input("Введите трехначное число: "))
-# except:
-#     print("Вы ввели не коректнные данные!")
-#
-# if(input_number<10):
-#     input_number= input_number * 1000
-#     result = float(input_number//1000)
-#     result2 = float((input_number//100)%10)
-#     result3 = float((input_number//10)%10)
-#     print(input_number,result,result2,result3)
-#     print(round(result + result2 + result3))
-# elif(input_number>10 and input_number<99):
-#     input_number = input_number * 100
-#     result = float(input_number // 1000)
-#     result2 = float((input_number // 100) % 10)
-#     result3 = float((input_number // 10) % 10)
-#     print(input_number, result, result2, result3)
-#     print(round(result + result2 + result3))
-# elif(input_number>100):
-#     input_number = input_number
-#     result = float(input_number // 100)
-#     result2 = float((input_number // 10) % 10)
-#     result3 = float(input_number % 10)
-#     print(input_number, result, result2, result3)
-#     print(round(result + result2 + result3))
+try:
+    input_number = float(input("Введите трехначное число: "))
+except:
+    print("Вы ввели не коректнные данные!")
+
+if(input_number<10):
+    input_number= input_number * 1000
+    result = float(input_number//1000)
+    result2 = float((input_number//100)%10)
+    result3 = float((input_number//10)%10)
+    print(input_number,result,result2,result3)
+    print(round(result + result2 + result3))
+elif(input_number>10 and input_number<99):
+    input_number = input_number * 100
+    result = float(input_number // 1000)
+    result2 = float((input_number // 100) % 10)
+    result3 = float((input_number // 10) % 10)
+    print(input_number, result, result2, result3)
+    print(round(result + result2 + result3))
+elif(input_number>100):
+    input_number = input_number
+    result = float(input_number // 100)
+    result2 = float((input_number // 10) % 10)
+    result3 = float(input_number % 10)
+    print(input_number, result, result2, result3)
+    print(round(result + result2 + result3))
