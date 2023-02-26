@@ -1,6 +1,5 @@
 import json
 import random
-from pprint import pprint
 
 def read(filename):
     with open(filename, "r", encoding="utf-8") as file:
