@@ -9,6 +9,7 @@ person_help={
     '1':"Вывести весь список",
     '2':"Добавить в список пользователя",
     '3':"Удалить пользователя",
+    '4':"Редактировать пользователя"
 }
 while True:
 
@@ -20,7 +21,7 @@ while True:
     if cmd == "2":
         func.add_person()
     if cmd == "3":
-            func.delete_person_in_spravochnic()
+        func.delete_person_in_spravochnic()
     if cmd == "4":
         func.edit_person_in_spravochnic()
     if cmd == "h" or cmd == "H":
