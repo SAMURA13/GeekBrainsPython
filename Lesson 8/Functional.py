@@ -3,20 +3,16 @@ import random
 from pprint import pprint
 
 def read(filename):
-    # читаем существующие данные из файла
     with open(filename, "r", encoding="utf-8") as file:
         return json.load(file)
 
 def write_new_person(data, filename):
     with open(filename, "r", encoding="utf-8") as file:
-        # читаем существующие данные из файла
         existing_data = json.load(file)
 
-    # добавляем нового человека к существующим данным
     existing_data.append(data)
 
     with open(filename, "w", encoding="utf-8") as file:
-        # записываем обновленные данные в файл
         json.dump(existing_data, file, indent=3, ensure_ascii=False)
 
 def add_person():
@@ -95,7 +91,6 @@ def edit_person_in_spravochnic():
         print("Пользователь с таким id не найден.")
 
 def delete_person_in_spravochnic():
-    print("Список контактов")
     with open(filename, "r", encoding="utf-8") as file:
         existing_data = json.load(file)
 
